@@ -1,0 +1,281 @@
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+<style>
+#top-custom{
+  background-color: #124489;
+  min-height: 30px;
+  float:right;
+  width:60%;
+  padding-left: 15px;
+  color:white;
+  padding: 5px;
+  padding-right:-20px;
+  background-image:url('{{ site.baseurl }}/assets/img/tip.jpg');
+  background-repeat: no-repeat;
+  text-align: right;
+}
+  #Float-Area{
+  padding-left: 8.5%;
+  padding-top: 10px;
+  }
+   #img-float{
+     float: left;
+   }
+   #img-float img{
+     width:4vw;
+   }
+   #Logo-Text{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.5vw;
+    color:#585858;
+   }
+   #mobileLogo{
+    font-family: 'Roboto',sans-serif;
+    font-size: 30px;
+    text-decoration:none;
+    display:none;
+   }
+   #Slogan{
+    font-family: Century Gothic, helvetica neue;
+    font-size: 15px;
+    color:#585858;
+
+   }
+   @media screen and  (max-width: 1604px){
+    #img-float img {
+    width:4vw;
+    }   
+    #Logo-Text{
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    color:#585858;
+   }
+   #Slogan{
+    font-family: Century Gothic, helvetica neue;
+    font-size: 15px;
+    color:#585858;
+
+   }
+   }
+   @media screen and  (max-width: 611px){
+    #img-float img {
+    width:8vw;
+    }   
+    #Logo-Text{
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    color:#585858;
+    display:none;
+   }
+   #mobileLogo{
+    font-family: 'Roboto',sans-serif;
+    font-size: 5vw;
+    text-decoration:none;
+    display:block;
+   }
+   #Slogan{
+    font-family: Century Gothic, helvetica neue;
+    font-size: 10px;
+    color:#585858;
+    display:none;
+   }
+   #GovJam{
+    font-size:3.5vw;
+   }
+    #top-custom{
+    background-color: #124489;
+    height:4.5vh;
+    float:right;
+    width:60%;
+    padding-left: 15px;
+    color:white;
+    padding: 5px;
+    padding-right:-20px;
+    background-image:url('{{ site.baseurl }}/assets/img/tip.jpg');
+    background-repeat: no-repeat;
+    text-align: right;
+    }
+    #flag{
+        display:none;
+    }
+
+   }
+   @media screen and  (max-width: 424px){
+    #top-custom{
+    background-color: #124489;
+    height:3.5vh;
+    float:right;
+    width:60%;
+    padding-left: 15px;
+    color:white;
+    padding: 5px;
+    padding-right:-20px;
+    background-image:url('{{ site.baseurl }}/assets/img/tip.jpg');
+    background-repeat: no-repeat;
+    text-align: right;
+    }
+    #flag{
+        display:none;
+    }
+
+   } 
+
+
+  
+</style>
+<div id="top-custom">
+  <span id="GovJam" style="padding:10px;font-family: sans-serif;">GOVERNMENT OF JAMAICA </span>
+  <img id="flag" src="{{ site.baseurl }}/assets/img/jamflag.jpg" style="height: 16px;" alt="jamaican flag"/>
+</div>
+<div id="Float-Area">
+  <div id="img-float">
+    <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/statin-logo.png" alt='statin logo'/> </a>
+      </div>
+    <div id="Logo-Text">
+      <a href="{{ site.baseurl }}" style="text-decoration:none;">  Statistical Institute of Jamaica</a>
+    
+    </div>
+    <a id="mobileLogo" href="{{ site.baseurl }}">STATIN</a>
+    <div id="Slogan">
+      We collect. We Analyse. We Publish
+    </div>    
+</div> 
+    <!-- Use Sweet alert for back and forth movment -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        .swal2-html-container {
+            font-size:1.2em;
+            font-family:"Open Sans", Helvetica, Arial, sans-serif;
+            text-align: justify;
+        }
+        .swal2-title{
+            margin:0px;
+            font-size: 2.2em;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+            margin-bottom: 28px;
+            font-family:"Open Sans", Helvetica, Arial, sans-serif;
+        }
+        .swal2-styled.swal2-confirm{
+            background-color:red;
+            border-radius:0em;
+        }
+        @media screen  and (max-width:1000px) { 
+        .swal2-popup{
+            width:100%;
+        }
+    
+    }  
+        @media screen  and (min-width:1001px) { 
+        .swal2-popup{
+            width:75%;
+        }
+    
+    }  
+    @media screen  and (min-width:1350px) { 
+        .swal2-popup{
+            width:50%;
+        }
+    
+    }
+    </style>
+    <script>
+      
+        const disclaimerPage1= document.createElement('div');
+        disclaimerPage1.innerHTML='<p>By continuing on this webpage(s) you have acknowledged the content of this disclaimer and the Terms and Conditions of Data Use on the corporate website of the Statistical Institute of Jamaica: <a href="https://statinja.gov.jm/">www.statinja.gov.jm</a> and you have agreed to the conditions under both.</p><p>The Statistical Institute of Jamaica <strong>("STATIN")</strong> maintains this webpage(s) (the “Site”) as a courtesy to those who may choose to access the Site (“Users”) he information presented on the Site is for review and research purposes only. <strong>STATIN</strong> grants permission to Users to visit the Site and to download and copy the information, documents and materials (collectively, “Materials”) from the Site for Users\' personal, commercial and non-commercial use.Postings on the Site are made at such times as <strong>STATIN</strong> determines in our discretion. While the information contained within the Site is periodically updated, <strong>NO GUARANTEE</strong> is given that the information provided is correct, complete, and up to date.</p>'
+        
+        const disclaimerPage2=document.createElement('div')
+        disclaimerPage2.innerHTML='<p><strong>STATIN</strong> does not review past postings to determine whether they remain accurate, and information contained in such postings may have been superseded.This data product is provided \‘as-is,\’ and to the fullest extent permitted by law, <strong>STATIN</strong> makes no warranty, either express or implied, including but not limited to, warranties of merchantability and fitness for a particular purpose. <strong>STATIN</strong> shall not have any liability or responsibility for any errors or omissions in the content of the Site, for Users\’ action or inaction in connection with the Site or for any damage to Users\’ computer or data or any other damage Users may incur in connection with the Site. In no event will <strong>STATIN</strong> be liable for any direct, special, indirect, consequential or other damages, however caused. <strong>WITHOUT LIMITING THE FOREGOING, STATIN ACCEPTS NO RESPONSIBILITY FOR THE THIRD-PARTY USE OR INTERPRETATION OF THE DATA OR FOR INFERENCES BASED ON IT NOR DOES STATIN REPRESENT OR WARRANT THAT THE SITE WILL OPERATE WITHOUT INTERRUPTION OR ERROR.</strong></p>'
+        const disclaimerPage3=document.createElement('div')
+        const arrDisc=[disclaimerPage1,disclaimerPage2]
+        disclaimerPage3.innerHTML='<p>The Site may contain links to other internet resources including third-party websites or services that are not owned or controlled by <strong>STATIN</strong>. These links are provided solely for the convenience of Users. <strong>STATIN</strong> is not responsible for the accuracy, currency or reliability of the content of these sites. Links from <strong>STATIN</strong> to third-party sites do not constitute an endorsement or any guarantee by <strong>STATIN</strong> of products and services on these sites.</p>'
+
+        const Disclaimer=async()=> {
+        const steps = ['1', '2'];
+        const values = [];
+        let currentStep;
+
+        Swal.mixin({
+        confirmButtonText: 'Next',
+        cancelButtonText: 'Back',
+        allowOutsideClick:false,
+        allowEscapeKey:false,
+        customClass:{
+            confirmButton:'red',
+        }
+        })
+
+        for (currentStep = 0; currentStep < 2;) {
+        const result = await Swal.fire({
+            title: 'Disclaimer',
+            html:arrDisc[currentStep],
+            showCancelButton: currentStep > 0,
+            currentProgressStep: currentStep,
+            confirmButtonText: 'Next',
+            cancelButtonText: 'Back',
+        });
+
+        if (result.value) {
+            values[currentStep] = result.value
+            currentStep++;
+            if (currentStep === 2) {
+            Swal.mixin();
+            swal.fire({
+            title:'Disclaimer',
+            html:disclaimerPage3,
+            allowOutsideClick:false,
+            allowEscapeKey:false,
+            confirmButtonText: 'Accept',
+             //Creates Cookie after accept button is invoked on SWAL
+            }).then(()=>createCookie(cookieName, cookieValue, cookieExpireDays))
+            break
+            }
+        } else if (result.dismiss === 'cancel') {
+            currentStep--;
+        }
+        }
+        }
+
+        let cookieName= "OpenSdgDisclaimer";
+        let cookieValue="Statin Disclaimer";
+        let cookieExpireDays= 30;
+     
+        let createCookie= function(cookieName, cookieValue, cookieExpireDays){
+        let currentDate = new Date();
+        currentDate.setTime(currentDate.getTime() + (cookieExpireDays*24*60*60*1000));
+        let expires = "expires=" + currentDate.toGMTString();
+        document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+        if(document.cookie){
+            document.getElementsByClassName("swal2-container").style.display = "none";
+        }else{
+            alert("Unable to set cookie. Please allow all cookies site from cookie setting of your browser");
+        }
+        
+        }
+        let getCookie= function(cookieName){
+        let name = cookieName + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+        }
+        let checkCookie= function(){
+        let check=getCookie(cookieName);
+        if(check==""){
+            Disclaimer();
+        }
+    }
+    checkCookie();
+            
+    </script>
