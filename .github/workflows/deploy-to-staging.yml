@@ -7,8 +7,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pages: write
+  contents: write  # Allows pushing to the repository, needed for the deployment to gh-pages
+  pages: write     # Allows managing GitHub Pages
+  actions: read    # Allows reading other GitHub Actions in the repository
+  id-token: write  # Required for OIDC token-based authentication if necessary
 
 jobs:
   build:
