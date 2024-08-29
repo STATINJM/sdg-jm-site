@@ -10,7 +10,7 @@ var match = currentUrl.match(regex);
 
 if (match && match[1]) {
     // Create the new URL for the CSV file
-    var csvUrl = 'https://statinjm.github.io/sdg-jm-data/en/data/' + match[1] + '.csv';
+    var csvUrl = 'https://statinjm.github.io/sdg-jm-data/es/data/' + match[1] + '.csv';
     
     // Set anchor attributes
     anchor.href = csvUrl;
