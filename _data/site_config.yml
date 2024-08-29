@@ -194,7 +194,7 @@ news:
 progress_status:
   status_heading: ''
   status_types: []
-remote_data_prefix: 'https://sdgnrp.statinja.gov.jm/sdg-data-beta'
+remote_data_prefix: 'https://statinjm.github.io/sdg-jm-data/'
 reporting_status:
   title: status.reporting_status
   description: status.description
@@ -209,8 +209,8 @@ reporting_status:
     - value: notapplicable
       label: status.not_applicable
       hide_on_goal_pages: false
-repository_url_data: 'https://github.com/MSBMJM/sdg-data-beta'
-repository_url_site: 'https://github.com/MSBMJM/sdg-jm-beta/'
+repository_url_data: 'https://github.com/STATINJM/sdg-jm-data'
+repository_url_site: 'https://github.com/STATINJM/sdg-jm-site'
 search_index_boost: []
 search_index_extra_fields: []
 site_config_form:
