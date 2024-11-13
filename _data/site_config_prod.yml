@@ -16,7 +16,7 @@
 
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://sdgnrp.statinja.gov.jm/sdg-production-data"
+remote_data_prefix: "https://statinjm.github.io/sdg-production-data"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
