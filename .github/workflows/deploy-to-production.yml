@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         persist-credentials: false
     - name: Set up Ruby 3.2
@@ -43,10 +43,10 @@ jobs:
         bundle install
         JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_prod.yml
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        REPOSITORY_NAME: STATINJM/STATINJM.github.io        
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: main
-        FOLDER: _site
-        CLEAN: true
+        repository-name: STATINJM/STATINJM.github.io
+        token: ${{ secrets.ACCESS_TOKEN }}
+        branch: main
+        folder: _site
+        clean: true
