@@ -11,7 +11,7 @@ The Statistical Institute of Jamaica (STATIN) is committed to producing high qua
 
 STATIN is committed to achieving excellence through the provision of timely, reliable and accurate statistics for informed decision making in order to maximize the welfare of all Jamaicans.
 
-STATIN’s Terms and Conditions outline the standards for data sharing, access, authorship, citation, and the restrictions on the use of data released by STATIN on its website [www.statinja.gov.jm](https://www.statinja.gov.jm).
+STATIN’s Terms and Conditions outline the standards for data sharing, access, authorship, citation, and the restrictions on the use of data released by STATIN on its website [sdgnrp.statinja.gov.jm](https://sdgnrp.statinja.gov.jm/).
 
 ### 1.1 STATIN’s Data Access Requirements
 
@@ -37,7 +37,7 @@ Access to STATIN’s data is subject to the requirements set forth by these Term
 
 ### Licence
 
-STATIN grants to the Data User a non-exclusive, royalty-free licence to copy, use and create derivative works from STATIN’s Data for commercial and non-commercial purposes, released through its website, [www.statinja.gov.jm](https://www.statinja.gov.jm), subject to the terms of this Licence.
+STATIN grants to the Data User a non-exclusive, royalty-free licence to copy, use and create derivative works from STATIN’s Data for commercial and non-commercial purposes, released through its website, [sdgnrp.statinja.gov.jm](https://sdgnrp.statinja.gov.jm/), subject to the terms of this Licence.
 
 ### Approved Use
 
