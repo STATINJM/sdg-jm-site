@@ -70,6 +70,8 @@ footer_menu:
     translation_key: Instagram
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
+  - path: /terms-of-use/
+    translation_key: Terms of Use
 frontpage_cards:
   - title: frontpage.download_all
     content: ''
@@ -192,7 +194,7 @@ news:
 progress_status:
   status_heading: ''
   status_types: []
-remote_data_prefix: 'https://statinjm.github.io/sdg-jm-data/'
+remote_data_prefix: 'https://sdgnrp.statinja.gov.jm/sdg-jm-data'
 reporting_status:
   title: status.reporting_status
   description: status.description
